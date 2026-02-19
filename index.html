@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emploi_L1CS03_S2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div>
+                <h3 id="nav-title" class="cursor-pointer">Les emplois</h3>
+                <ul>
+                    <li class="cursor-pointer" onclick="display_yesterday()">Hier</li>
+                    <li class="cursor-pointer" onclick="display_today()">Aujourd'hui</li>
+                    <li class="cursor-pointer" onclick="display_tomorrow()">Demain</li>
+                    <li class="cursor-pointer" id="ramadan" onclick="to_ramadan()">Horraire <b>Ramadan</b></li>
+    
+                    <div class="divsem cursor-pointer">
+                        <li onclick="display_sem('aw')">Semaine A</li>
+                        <ol>
+                            <li class="sa" onclick="display_sem('aw')">Semaine A</li>
+                        </ol>
+                    </div>
+    
+                    <div class="divsem cursor-pointer">
+                        <li onclick="display_sem('bw')">Semaine B</li>
+                        <ol>
+                            <li class="sb" onclick="display_sem('bw')">Semaine B</li>
+                        </ol>
+                    </div>
+                    <div class="divsem cursor-pointer">
+                        <li onclick="display_sem('2w')">Semaines A et B</li>
+                        <ol>
+                            <li class="s2" onclick="display_sem('2w')">Semaines A&B</li>
+                        </ol>
+                    </div>
+                </ul>
+            </div>
+            <span class="cursor-pointer" id="nav-open"><b>×</b></span>
+        </nav>
+        <main>
+            <header>
+                <h1>
+                    <span class="cursor-pointer" id="detail" onclick="detail_swipe()"></span>
+                    <!-- Emploi du temps de la 1LCS03 <br> -->
+                </h1>
+            </header>
+            <div class="tabframe" id="tabsemframe">
+                <table id="tabsem">
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="tabframe" id="tabjourframe">
+                <table id="tabjour">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
