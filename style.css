@@ -15,7 +15,9 @@ body{
     --fore: #185372;
     --tabhead: #024251;
 
-    --nav-c: #0d266d;
+    --nav-c: #1a5584;
+
+    --horr: rgb(32, 134, 34);
 
     --empty: repeating-linear-gradient(
         to bottom right, 
@@ -254,13 +256,13 @@ nav ul>.divsem>li{
 
 #ramadan{
     position: relative;
-    background-color: rgb(117, 25, 53);
+    background-color: var(--horr);
     border: 2px solid var(--nav);
     color: var(--back);
     &:hover{
         background-color: var(--back);
-        color: rgb(117, 25, 53);
-        border-color: rgb(117, 25, 53);
+        color: var(--horr);
+        border-color: var(--horr);
         /* letter-spacing: 2px; */
     }
 }
@@ -372,7 +374,6 @@ td:has(.lesson){
     /* transform: translateY(50%); */
     font-family: cursive, sans-serif;
     /* font-family:  sans-serif; */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .lesson>.type>i{
@@ -464,5 +465,3 @@ table .thd{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
-
-
