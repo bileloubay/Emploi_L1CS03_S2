@@ -376,6 +376,7 @@ td:has(.lesson){
     /* transform: translateY(50%); */
     font-family: cursive, sans-serif;
     /* font-family:  sans-serif; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .lesson>.type>i{
@@ -467,3 +468,4 @@ table .thd{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
+
