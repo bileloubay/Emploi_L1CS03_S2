@@ -211,10 +211,11 @@ const display_today = (dt = "", det = "") => {
     if (dt == "") {
         dt = new Date();
     }
+    let date = dt.getDate();
     if (det == "") {
         det = "Aujourd'hui";
     }
-
+    
     // dt = new Date("01-24-2026");
     // console.log(dt);
     let today = dt.toLocaleDateString("fr-FR", { weekday: "long" });
@@ -230,7 +231,8 @@ const display_today = (dt = "", det = "") => {
         let month = dt.toLocaleDateString("fr-FR", { month: "long" });
         w = get_week_ab(dt);
         // console.log(w);
-        stdate = `Le ${dt.getDate()} ${month} ${dt.getFullYear()}`
+        
+        stdate = `Le ${date} ${month} ${dt.getFullYear()}`
         display_jour(w + today, stdate, det)
     }
     current_table = "jour-aj"
