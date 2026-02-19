@@ -155,10 +155,6 @@ h3{
     border: 2px solid black;
     box-sizing: border-box;
     border-right: 0;
-    transition: 0.3s;
-    &:hover{
-        letter-spacing: 4px;
-    }
 }
 
 .divsem{
@@ -468,4 +464,5 @@ table .thd{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
+
 
